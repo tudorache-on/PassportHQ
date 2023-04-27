@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en-us">
+    <title>PassportHQ | Откройте свои глобальные возможности</title>
+    <meta name="description" content="Обеспечьте себе второе гражданство и разблокируйте глобальные возможности с помощью PassportHQ. Наша программа Гражданства через инвестиции предлагает быстрый и надежный путь к получению двойного гражданства. Инвестируйте в свое будущее и получите доступ к расширенной свободе путешествий, возможностям бизнеса и лучшему качеству жизни.">
+    <meta name="keywords" content="гражданство за инвестиции, гражданство, второй паспорт, богатство, возможности, налоги">
+
+    <link href="../dist/output.css" rel="stylesheet">
+    
+    <script src="../src/JS/anime.min.js" defer></script>
+    <script src="../src/JS/fitty.min.js" defer></script>
+    <script src="../src/JS/index.js" defer></script>
+
+    <link rel="icon" type="image" href="../resources/images/ICONS/passport_icon.png">
+
+    <style>
+        #benefits .grid > div {
+            perspective: 1000px;
+            min-height: 375px;
+            max-height: 410px;
+        }
+
+        @media (min-width: 1800px) {
+            #benefits .grid > div {
+                min-height: 400px;
+            }
+        }
+
+        @media (min-width: 2000px) {
+            #benefits .grid > div {
+                min-height: 375px;
+        }
+}
+    </style>
+</head>
+<body>
+    <div id="loading" class="w-screen h-screen flex justify-center items-center z-50 top-0 left-0 fixed bg-white opacity-0">
+        <div id="wrapper" class="relative h-[170px] w-[60px]">
+            <div class="passport bg-[#1D395F] z-10">
+                <h3>PASSPORT</h3>
+                <h1>HQ</h1>
+            </div>
+            <div class="passport bg-[#642435] z-[9]">
+                <h3>PASSPORT</h3>
+                <h1>HQ</h1>
+            </div>
+            <div class="passport bg-[#7F3541] z-[8]">
+                <h3>PASSPORT</h3>
+                <h1>HQ</h1>
+            </div>
+            <div class="passport bg-[#4B5B7F] z-[7]">
+                <h3>PASSPORT</h3>
+                <h1>HQ</h1>
+            </div>
+            <div class="passport bg-[#16263D] z-[6]">
+                <h3>PASSPORT</h3>
+                <h1>HQ</h1>
+            </div>
+            <h1 class="absolute bottom-0 left-1/2 translate-x-[-50%] text-[33px] font-bold" id="title">PassportHQ</h1>
+        </div>
+    </div>
+
+    <div class="body w-[100vw] h-full overflow-x-hidden relative">
+        <div class="menu fixed w-screen h-screen bg-[#2D4059] text-[#F1F1F1] z-20 flex justify-center items-center left-[-130%] lg:hidden">
+            <nav class="flex flex-col leading-none gap-[30px] big-text">
+                <a href="#home" class="font-bold">Главная</a>
+                <a href="#about-us">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#benefits">Преиму- <br> щества</a>
+                <a href="#contact-us">Контакты</a>
+            </nav>
+        </div>
+    
+        <section class="h-fit min-h-screen relative flex flex-col link" id="home">
+            <header class="w-full h-[80px] lg:h-[100px] max-h-[100px] flex items-center justify-center lg:justify-between px-[7.5%] 2xl:px-[10%]">
+                <div class="languages absolute flex gap-[50px] right-[-150px] text-[20px] text-[#F1F1F1] lg:hidden">
+                    <a href="../index.html" class="z-30">ENG</a>
+                    <a href="" class="z-30 font-bold">РУ</a>
+                </div>
+                <div class="menu-btn absolute left-[25px] z-20 lg:hidden">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                </div>
+                <div class="z-10 flex items-center gap-8">
+                    <a href="rus.html"><h1 class="logo medium-text leading-none mb-[5px] cursor-pointer text-[#F1F1F1]">PassportHQ</h1></a>
+                    <div class="h-full items-center gap-3 hidden lg:flex">
+                        <a class="text-sm font-light opacity-60" href="../index.html">ENG</a>
+                        <a class="text-sm" href="">РУ</a>
+                    </div>
+                </div>
+                <nav class="links z-10 items-center gap-[50px] w-fit hidden lg:flex">
+                    <a href="#home">Главная</a>
+                    <a href="#about-us" class="min-w-fit">О нас</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#benefits">Преимущества</a>
+                    <button class="bg-[#2D4059] hover:bg-[#F1F1F1] hover:text-[#2D4059] transition-all px-5 py-2 rounded-lg min-w-fit" onClick="document.getElementById('contact-us').scrollIntoView();">
+                        Консультация
+                    </button>
+                </nav>
+            </header>
+            <div class="container flex flex-col justify-end lg:justify-start xlg:justify-center flex-[100%]">
+                <img class="absolute max-w-none h-[60%] lg:h-[70%] left-1/2 translate-x-[-50%] lg:translate-x-0 top-[12%] lg:top-1/2 lg:translate-y-[-50%] brightness-75 lg:brightness-100" id="passport" src="../resources/images/HOME/passport-eu.webp" alt="">
+                <div class="text z-10 lg:w-[40%] mb-[50px] lg:mb-0">
+                    <h1 class="big-text leading-none text-[#F1F1F1]" id="big-title"> 
+                        <span class="medium-text lg:text-4xl 2xl:text-5xl">МОСТ К <span class="text-[#FFD460]">ЛУЧШЕЙ</span></span> <br>
+                        ЖИЗНИ!
+                    </h1>
+                    <p class="mb-6 mt-6 text-[#F1F1F1] font-bold">Являетесь ли вы состоятельным человеком? <br> <br> Было бы логичным, если вы задумываетесь о получении второго гражданства через программы <span class="text-[#FFD460]">Гражданства за Инвестиции</span>.</p>
+                    <div class="line slide h-[4px] w-[40%] bg-[#F1F1F1] mb-9"></div>
+                    <p class="mb-6 text-[#F1F1F1]">Обеспечьте личную и семейную безопасность для будущих поколений. Предоставьте себе свободу новой жизни, инвестиций и путешествий, всегда имея альтернативный образ жизни под рукой. Кто бы не хотел этого?</p>
+                    <button class="bg-[#F1F1F1] text-[#212121] px-10 py-2 rounded-lg mt-5 xl:mt-9" onClick="document.getElementById('contact-us').scrollIntoView();">
+                        Запрос Клиента
+                    </button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="text-[#212121] link" id="about-us">
+            <div class="container flex flex-col lg:flex-row-reverse lg:justify-between">
+                <div class="text lg:w-[40%] flex flex-col justify-center">
+                    <h1 class="font-bold big-text leading-none text-[#2D4059]">О НАС</h1>
+                    <div class="line slide h-[4px] w-[40%] bg-[#2D4059] mb-[50px] mt-[25px]"></div>
+                    <p class="text-[#212121]">
+                        PassportHQ имеет несколько лет опыта на рынке, что позволяет нам тщательно отобрать наиболее привлекательные варианты гражданства и резиденции, доступные для вас. <br> <br>
+                        Наша команда экспертов обладает обширными знаниями в области программ гражданства за инвестиции по всему миру и успешно закрыла 208 заявок только в 2022 году и 117 заявок в 2023 году, и число продолжает расти. <br> <br>
+                        Мы понимаем проблемы и сложности процесса получения второго паспорта и будем поддерживать вас на каждом этапе процесса, помогая и консультируя вас по всем необходимым документам, делая процесс максимально беспроблемным.
+                    </p>
+                    <button class="bg-[#2D4059] px-10 py-3 w-[45%] min-w-fit mt-14 text-[#F1F1F1] rounded-lg" onClick="document.getElementById('services').scrollIntoView();">
+                        Что мы предоставляем?
+                    </button>
+                </div>
+                <div class="relative images mt-[50px] lg:m-0 aspect-[380/393] w-full lg:w-[50%] max-h-[550px] xl:max-h-[800px]">
+                    <div class="absolute bg-[#2D4059] h-full w-[80%] lg:w-full ml-[-25px] lg:ml-[-19%] xl:ml-[-25%]"></div>
+                    <div class="absolute carousell w-full h-full overflow-hidden">
+                        <img class="absolute top-1/2 translate-y-[-50%] aspect-[254/347] left-0 rounded-2xl object-cover small-image" src="../resources/images/ABOUT-US/image_2.webp" alt="">
+                        <img class="absolute top-1/2 translate-y-[-50%] aspect-[254/347] right-0 rounded-2xl z-[2] object-cover big-image" src="../resources/images/ABOUT-US/image_1.webp" alt="">
+                        <img class="absolute top-1/2 translate-y-[-50%] aspect-[254/347] right-[-65%] rounded-2xl z-[3] object-cover big-image" src="../resources/images/ABOUT-US/image_2.webp" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    
+        <section class="text-[#F1F1F1] py-[50px] lg:py-[15vh] link" id="services">
+            <div class="container h-fit lg:h-[50vh] flex flex-col lg:flex-row lg:justify-between lg:items-center">
+                <div class="title md:w-[30%] lg:w-[25%] relative">
+                    <h1 class="relative big-text font-bold leading-tight xl:cool-border xl:right slide">УСЛУГИ</h1>
+                </div>
+                <div class="md:w-[10%] lg:w-[15%] flex justify-start lg:justify-center">
+                    <div class="line slide h-[4px] lg:h-[50vh] w-[60%] lg:w-[4px] bg-[#F1F1F1] vertical mb-[50px] mt-[25px] lg:mb-0 lg:mt-0"></div>
+                </div>
+                <div class="text lg:w-[60%] flex flex-col">
+                    <p class="lg:text-lg slide">
+                        Мы предлагаем программы глобальной резиденции и гражданства через нашу команду экспертов. С успешно обработанными более <span class="text-[#FFD460]">1000 заявками</span>, мы поможем вам заполнить всю необходимую документацию и проведем вас через процесс получения всех необходимых документов, чтобы ваша заявка соответствовала всем необходимым требованиям. <br> <br>
+                        Наша команда посвящена тому, чтобы процесс был <span class="text-[#FFD460]">максимально гладким</span> и <span class="text-[#FFD460]">без стресса</span> чтобы ваш второй паспорт был получен <span class="text-[#FFD460]">быстро</span> и <span class="text-[#FFD460]">с легкостью</span>.
+                    </p>
+                    <button class="bg-[#FFD460] px-10 py-3 w-[45%] min-w-fit mt-10 text-[#212121] rounded-lg" onClick="document.getElementById('benefits').scrollIntoView();">
+                        Какие возможности?
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+    
+        <section id="benefits" class="mb-12 link">
+            <div class="container flex flex-col lg:flex-row">
+                <div class="text lg:w-[30%] xl:w-[50%]">
+                    <h1 class="big-text font-bold leading-tight text-[#2D4059]">ОТКРОЙТЕ <br> НОВЫЕ <br> ВОЗМОЖ- <br> НОСТИ <br> ДЛЯ СЕБЯ </h1>
+                    <div class="line slide h-[4px] w-[40%] bg-[#2D4059] mb-[50px] mt-[25px]"></div>
+                    <p class="mb-[50px] lg:mb-0 lg:w-[80%] text-[#212121]">
+                        Инвестирование во второй паспорт открывает мир возможностей. <br> <br> 
+                        Свобода международных путешествий? Обучение за границей? Бизнес в различных иностранных странах? Второй или третий паспорт - это необходимость. <br> <br> 
+                        В PassportHQ мы предлагаем лучший сервис для жизни без границ.
+                    </p>
+                </div>
+               <div class="images lg:w-[70%] xl:w-[50%] flex flex-col">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-[20px] text-[#F1F1F1] content-center cursor-pointer">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="front">
+                                    <img class="object-cover" src="../resources/images/BENEFITS/card-1.webp" alt="">
+                                </div>
+                                <div class="back bg-[#2D4059] p-[30px]">
+                                        <h1 class="medium-text font-bold leading-tight"> <span class="text-[#FFD460]">КАЧЕСТВЕННАЯ</span> <br> МЕДИЦИНA</h1>
+                                        <span class="h-[4px] w-[60%] bg-[#F1F1F1] block mt-[20px] mb-[40px] xlg:mb-[20px]"></span>
+                                        <p class="text-sm mb-[20px]">В Европе <span class="text-[#FFD460]">отличное здравоохранение</span> по сравнению с другими странами мира. Теперь люди могут свободно ездить между странами-членами Шенгенской зоны, не беспокоясь о <span class="text-[#FFD460]">медицинском страховании.</span> В любой точке Европейского Союза, <span class="text-[#FFD460]">PassportHQ</span> может предоставить вам доступ к качественному медицинскому обслуживанию.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="front bg-[#2D4059] p-[30px]">
+                                        <h1 class="medium-text font-bold leading-tight"><span class="text-[#FFD460]">НАЛОГОВАЯ</span> <br> ЭФФЕКТИВНОСТЬ</h1>
+                                        <span class="h-[4px] w-[60%] bg-[#F1F1F1] block mt-[20px] mb-[40px] xlg:mb-[20px]"></span>
+                                        <p class="text-sm">Некоторые программы предусматривают <span class="text-[#FFD460]">выгодные</span> налоговые структуры, включая более низкие налоговые ставки или освобождение от налогов на особые виды доходов. <span class="text-[#FFD460]">Для физических и юридических лиц</span> это может привести к значительной экономии на налогах. Для полного понимания <span class="text-[#FFD460]">проконсультируйтесь с нами.</span></p>
+                                </div>
+                                <div class="back">
+                                    <img class="object-cover" src="../resources/images/BENEFITS/card-2.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card lg:hidden">
+                            <div class="card-inner">
+                                <div class="front">
+                                    <img class="object-cover" src="../resources/images/BENEFITS/card-3.webp" alt="">
+                                </div>
+                                <div class="back bg-[#2D4059] p-[30px]">
+                                    <h1 class="medium-text font-bold leading-tight"> <span class="text-[#FFD460]">ПРЕСТИЖНЫЕ</span> <br> УНИВЕРСИТЕТЫ</h1>
+                                    <span class="h-[4px] w-[60%] bg-[#F1F1F1] block mt-[20px] mb-[40px] xlg:mb-[20px]"></span>
+                                    <p class="text-sm">Расширяя свои возможности в новой стране <span class="text-[#FFD460]">вместе с нами</span>, вы, скорее всего, сможете позволить себе <span class="text-[#FFD460]">качественное образование</span>. Кроме того, ваши дети или внуки смогут воспользоваться несколькими <span class="text-[#FFD460]">стипендиями</span>, предоставляемыми различными университетами, или <span class="text-[#FFD460]">платить меньше за обучение.</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card hidden lg:block">
+                            <div class="card-inner">
+                                <div class="front bg-[#2D4059] p-[30px]">
+                                    <h1 class="medium-text font-bold leading-tight"> <span class="text-[#FFD460]">НАСЫЩЕННАЯ</span> <br> ПЕНСИЯ</h1>
+                                    <span class="h-[4px] w-[60%] bg-[#F1F1F1] block mt-[20px] mb-[40px] xlg:mb-[20px]"></span>
+                                    <p class="text-sm">Спланируйте свой выход на пенсию, включая тип образа жизни, который вы хотите, и места, где вы хотели бы жить. <span class="text-[#FFD460]">Получение нашей помощи</span> для получения второго гражданства через инвестиции может стать для вас <span class="text-[#FFD460]">лучшим вариантом</span>, если вы хотите иметь <span class="text-[#FFD460]">интересную жизнь</span> на пенсии.</p>
+                                </div>
+                                <div class="back">
+                                    <img class="object-cover" src="../resources/images/BENEFITS/card-4.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card lg:hidden">
+                            <div class="card-inner">
+                                <div class="front bg-[#2D4059] p-[30px]">
+                                    <h1 class="medium-text font-bold leading-tight"> <span class="text-[#FFD460]">НАСЫЩЕННАЯ</span> <br> ПЕНСИЯ</h1>
+                                    <span class="h-[4px] w-[60%] bg-[#F1F1F1] block mt-[20px] mb-[40px] xlg:mb-[20px]"></span>
+                                    <p class="text-sm">Спланируйте свой выход на пенсию, включая тип образа жизни, который вы хотите, и места, где вы хотели бы жить. <span class="text-[#FFD460]">Получение нашей помощи</span> для получения второго гражданства через инвестиции может стать для вас <span class="text-[#FFD460]">лучшим вариантом</span>, если вы хотите иметь <span class="text-[#FFD460]">интересную жизнь</span> на пенсии.</p>
+                                </div>
+                                <div class="back">
+                                    <img class="object-cover" src="../resources/images/BENEFITS/card-4.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card hidden lg:block">
+                            <div class="card-inner">
+                                <div class="front">
+                                    <img class="object-cover" src="../resources/images/BENEFITS/card-3.webp" alt="">
+                                </div>
+                                <div class="back bg-[#2D4059] p-[30px]">
+                                    <h1 class="medium-text font-bold leading-tight"> <span class="text-[#FFD460]">ПРЕСТИЖНЫЕ</span> <br> УНИВЕРСИТЕТЫ</h1>
+                                    <span class="h-[4px] w-[60%] bg-[#F1F1F1] block mt-[20px] mb-[40px] xlg:mb-[20px]"></span>
+                                    <p class="text-sm">Расширяя свои возможности в новой стране <span class="text-[#FFD460]">вместе с нами</span>, вы, скорее всего, сможете позволить себе <span class="text-[#FFD460]">качественное образование</span>. Кроме того, ваши дети или внуки смогут воспользоваться несколькими <span class="text-[#FFD460]">стипендиями</span>, предоставляемыми различными университетами, или <span class="text-[#FFD460]">платить меньше за обучение.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full justify-center gap-[40px] mt-[20px]">
+                            <img src="../resources/images/BENEFITS/arrow.png" alt="" class="aspect-[45/74] h-[35px] cursor-pointer" id="left">
+                            <img src="../resources/images/BENEFITS/arrow.png" alt="" class="rotate-180 aspect-[45/74] h-[35px] cursor-pointer" id="right">
+                    </div>
+               </div> 
+            </div>
+        </section>
+
+        <section id="split" class="mb-0">
+            <h1 class="big-text font-bold text-[#2D4059] text-center mb-12">ВСЕ ЕЩЕ НЕ УВЕРЕНЫ? <br> КАК НАСЧЕТ...</h1>
+            <div class="container flex flex-col relative justify-center items-center" >
+                <div class="absolute -skew-x-[45deg] w-[40%] xl:w-[35%] xl:-skew-x-[55deg] h-1/2 right-[30%] hidden lg:flex flex-col overflow-hidden" id="split-image">
+                    <div class="flex-[50%] overflow-hidden relative">
+                        <img src="../resources/images/SPLIT/img_1.webp" alt="" class="skew-x-[45deg] xl:skew-x-[55deg] min-w-[200%] h-[125%] xl:h-[145%] object-cover absolute top-0 left-[-40%] xl:left-[-25%]">
+                    </div>
+                    <div class="flex-[50%] overflow-hidden relative">
+                        <img src="../resources/images/SPLIT/img_2.webp" alt="" class="skew-x-[45deg] xl:skew-x-[55deg] min-w-[200%] h-[100%] xl:h-[155%] object-cover absolute top-0 left-[-45%] xl:left-[-30%]">
+                    </div>
+                </div>
+
+                <div class="-skew-x-[15deg] h-[500px] w-[75%] overflow-hidden relative mb-[50px] lg:hidden">
+                    <img src="../resources/images/SPLIT/img_1.webp" alt="" class="skew-x-[15deg] min-w-[250%] h-[100%] object-cover absolute top-0 left-[-60%]">
+                </div>
+
+                <div class="flex overflow-hidden">
+                    <div class="lg:w-[30%]">
+                        <h1 class="big-text font-bold leading-tight text-[#2D4059]">КАРЬЕРНАЯ ГИБКОСТЬ</h1>
+                        <div class="line slide h-[4px] w-[40%] bg-[#2D4059] mb-[50px] mt-[25px]"></div>
+                        <p class="mb-[50px] text-[#212121]">
+                            Вы сможете воспользоваться еще большим количеством возможностей для ведения бизнеса, если станете гражданином через инвестиции. Благодаря тому, что все страны участвуют в общем рынке, открытие глобального бизнеса означает, что у вас будет больше возможностей для доступа на рынок.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skew-x-[15deg] h-[500px] w-[75%] overflow-hidden relative  mb-[50px] lg:hidden">
+                    <img src="../resources/images/SPLIT/img_2.webp" alt="" class="-skew-x-[15deg] min-w-[250%] h-[100%] object-cover absolute top-0 left-[-75%]">
+                </div>
+                
+                <div class="flex flex-row-reverse">
+                    <div class="lg:w-[30%] lg:text-right relative">
+                        <h1 class="big-text font-bold leading-tight text-[#2D4059]">НАСЛЕДИЕ</h1>
+                        <div class="line slide h-[4px] w-[40%] bg-[#2D4059] mt-[25px] lg:right-0 absolute"></div>
+                        <p class="mb-[50px] lg:mb-[75px] text-[#212121] mt-[50px]">
+                            Инвестируйте в мир возможностей, обеспечивая безопасность, надежность и страхование наследия имени вашей семьи. Качество вашей жизни будет меняться вместе с миром, который находится у порога вас и вашей семьи. Жизнь без границ в современном постоянно меняющемся мире имеет первостепенное значение для принятия решения о вашем образе жизни.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="video" class="mb-0">
+            <div class="container py-[50px] lg:py-[6%] text-[#F1F1F1]">
+                <div class="lg:mx-[16%] flex flex-col items-center text-center">
+                    <h1 class="text-5xl lg:text-[3.2rem] font-bold" id="video-title">УЗНАЙТЕ <span class="text-[#FFD460]">БОЛЬШЕ!</span></h1>
+                    <div class="line slide h-[4px] w-[80%] lg:w-[35%] bg-[#F1F1F1] mt-6 mb-[50px]"></div>
+                    <p class="text-xl mb-[50px]">Представленный видеоролик объясняет и показывает несколько примеров реальных программ гражданства по инвестициям и их преимущества.</p>
+                    <iframe class="w-full aspect-[1044/588]" src="https://www.youtube.com/embed/ATwqVmNKoi0"></iframe>
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+    
+        <section class="bg-[#222222] text-[#F1F1F1] pt-[50px] m-0 relative" id="contact-us">
+            <img class="w-auto h-[25%] lg:h-[80%] absolute top-[100px] lg:top-1/2 lg:translate-y-[-50%] ml-[-20%] 2xl:ml-[-10%] max-w-none brightness-75 lg:brightness-100" src="../resources/images/CONTACT-US/passports.webp" alt="">
+
+            <div class="container flex flex-col lg:flex-row lg:justify-between lg:py-[6%]">
+                <div class="text w-[100%] lg:w-[45%] lg:pl-[15%] z-10 mb-[120px] lg:mb-0">
+                    <h1 class="big-text leading-tight font-bold mb-[50px] lg:mb-[60px] ">СВЯЗАТЬСЯ <br><span class="text-[#FFD460]">СЕЙЧАС</span></h1>
+                    <p class="text-xl">Если вас заинтересовали наши паспортные услуги или у вас есть какие-либо вопросы, пожалуйста, обращайтесь к нам.</p>
+                    <p class="text-xl font-light text-[#FFD460] mt-[25px] lg:mt-[60px]">clientliaison@dragongateway.com</p>
+                    <p class="text-xl font-light text-[#FFD460]">+17135038881</p>
+                </div>
+                <form action="" class="w-[115%] ml-[-25px] lg:ml-0 bg-[#2D4059] pt-[50px] pb-[100px] lg:py-0 px-[25px] lg:px-[20px] lg:pr-0 lg:pl-[8%] lg:rounded-lg lg:w-[50%] lg:text-left flex flex-col">
+                    <div class="flex">
+                        <div class="w-full lg:w-[43%]">
+                            <label for="salutation">Приветствие</label>
+                            <select name="salutation" id="salutation">
+                                <option value="">Выберите</option>
+                                <option value="Hon.">Hon.</option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Dr.">Dr.</option>
+                                <option value="Prof.">Prof.</option>
+                                <option value="Sheikh">Sheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col lg:flex-row justify-between">
+                        <div class="w-full lg:w-[43%]">
+                            <label for="fname">Имя</label>
+                            <input class="" type="text" name="fname" id="fname" placeholder="Введите имя">
+                        </div>
+                        <div class="w-full lg:w-[43%]">
+                            <label for="lname">Фамилия</label>
+                            <input class="" type="text" name="lname" id="lname" placeholder="Введите фамилию">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row justify-between">
+                        <div class="w-full lg:w-[43%]">
+                            <label for="nationality">Национальность</label>
+                            <select name="nationality" id="nationality">
+                                <option value="">Выберите</option>
+                                <option value="afghan">Afghan</option>
+                                <option value="albanian">Albanian</option>
+                                <option value="algerian">Algerian</option>
+                                <option value="american">American</option>
+                                <option value="andorran">Andorran</option>
+                                <option value="angolan">Angolan</option>
+                                <option value="antiguans">Antiguans</option>
+                                <option value="argentinean">Argentinean</option>
+                                <option value="armenian">Armenian</option>
+                                <option value="australian">Australian</option>
+                                <option value="austrian">Austrian</option>
+                                <option value="azerbaijani">Azerbaijani</option>
+                                <option value="bahamian">Bahamian</option>
+                                <option value="bahraini">Bahraini</option>
+                                <option value="bangladeshi">Bangladeshi</option>
+                                <option value="barbadian">Barbadian</option>
+                                <option value="barbudans">Barbudans</option>
+                                <option value="batswana">Batswana</option>
+                                <option value="belarusian">Belarusian</option>
+                                <option value="belgian">Belgian</option>
+                                <option value="belizean">Belizean</option>
+                                <option value="beninese">Beninese</option>
+                                <option value="bhutanese">Bhutanese</option>
+                                <option value="bolivian">Bolivian</option>
+                                <option value="bosnian">Bosnian</option>
+                                <option value="brazilian">Brazilian</option>
+                                <option value="british">British</option>
+                                <option value="bruneian">Bruneian</option>
+                                <option value="bulgarian">Bulgarian</option>
+                                <option value="burkinabe">Burkinabe</option>
+                                <option value="burmese">Burmese</option>
+                                <option value="burundian">Burundian</option>
+                                <option value="cambodian">Cambodian</option>
+                                <option value="cameroonian">Cameroonian</option>
+                                <option value="canadian">Canadian</option>
+                                <option value="cape verdean">Cape Verdean</option>
+                                <option value="central african">Central African</option>
+                                <option value="chadian">Chadian</option>
+                                <option value="chilean">Chilean</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="colombian">Colombian</option>
+                                <option value="comoran">Comoran</option>
+                                <option value="congolese">Congolese</option>
+                                <option value="costa rican">Costa Rican</option>
+                                <option value="croatian">Croatian</option>
+                                <option value="cuban">Cuban</option>
+                                <option value="cypriot">Cypriot</option>
+                                <option value="czech">Czech</option>
+                                <option value="danish">Danish</option>
+                                <option value="djibouti">Djibouti</option>
+                                <option value="dominican">Dominican</option>
+                                <option value="dutch">Dutch</option>
+                                <option value="east timorese">East Timorese</option>
+                                <option value="ecuadorean">Ecuadorean</option>
+                                <option value="egyptian">Egyptian</option>
+                                <option value="emirian">Emirian</option>
+                                <option value="equatorial guinean">Equatorial Guinean</option>
+                                <option value="eritrean">Eritrean</option>
+                                <option value="estonian">Estonian</option>
+                                <option value="ethiopian">Ethiopian</option>
+                                <option value="fijian">Fijian</option>
+                                <option value="filipino">Filipino</option>
+                                <option value="finnish">Finnish</option>
+                                <option value="french">French</option>
+                                <option value="gabonese">Gabonese</option>
+                                <option value="gambian">Gambian</option>
+                                <option value="georgian">Georgian</option>
+                                <option value="german">German</option>
+                                <option value="ghanaian">Ghanaian</option>
+                                <option value="greek">Greek</option>
+                                <option value="grenadian">Grenadian</option>
+                                <option value="guatemalan">Guatemalan</option>
+                                <option value="guinea-bissauan">Guinea-Bissauan</option>
+                                <option value="guinean">Guinean</option>
+                                <option value="guyanese">Guyanese</option>
+                                <option value="haitian">Haitian</option>
+                                <option value="herzegovinian">Herzegovinian</option>
+                                <option value="honduran">Honduran</option>
+                                <option value="hungarian">Hungarian</option>
+                                <option value="icelander">Icelander</option>
+                                <option value="indian">Indian</option>
+                                <option value="indonesian">Indonesian</option>
+                                <option value="iranian">Iranian</option>
+                                <option value="iraqi">Iraqi</option>
+                                <option value="irish">Irish</option>
+                                <option value="israeli">Israeli</option>
+                                <option value="italian">Italian</option>
+                                <option value="ivorian">Ivorian</option>
+                                <option value="jamaican">Jamaican</option>
+                                <option value="japanese">Japanese</option>
+                                <option value="jordanian">Jordanian</option>
+                                <option value="kazakhstani">Kazakhstani</option>
+                                <option value="kenyan">Kenyan</option>
+                                <option value="kittian and nevisian">Kittian and Nevisian</option>
+                                <option value="kuwaiti">Kuwaiti</option>
+                                <option value="kyrgyz">Kyrgyz</option>
+                                <option value="laotian">Laotian</option>
+                                <option value="latvian">Latvian</option>
+                                <option value="lebanese">Lebanese</option>
+                                <option value="liberian">Liberian</option>
+                                <option value="libyan">Libyan</option>
+                                <option value="liechtensteiner">Liechtensteiner</option>
+                                <option value="lithuanian">Lithuanian</option>
+                                <option value="luxembourger">Luxembourger</option>
+                                <option value="macedonian">Macedonian</option>
+                                <option value="malagasy">Malagasy</option>
+                                <option value="malawian">Malawian</option>
+                                <option value="malaysian">Malaysian</option>
+                                <option value="maldivan">Maldivan</option>
+                                <option value="malian">Malian</option>
+                                <option value="maltese">Maltese</option>
+                                <option value="marshallese">Marshallese</option>
+                                <option value="mauritanian">Mauritanian</option>
+                                <option value="mauritian">Mauritian</option>
+                                <option value="mexican">Mexican</option>
+                                <option value="micronesian">Micronesian</option>
+                                <option value="moldovan">Moldovan</option>
+                                <option value="monacan">Monacan</option>
+                                <option value="mongolian">Mongolian</option>
+                                <option value="moroccan">Moroccan</option>
+                                <option value="mosotho">Mosotho</option>
+                                <option value="motswana">Motswana</option>
+                                <option value="mozambican">Mozambican</option>
+                                <option value="namibian">Namibian</option>
+                                <option value="nauruan">Nauruan</option>
+                                <option value="nepalese">Nepalese</option>
+                                <option value="new zealander">New Zealander</option>
+                                <option value="ni-vanuatu">Ni-Vanuatu</option>
+                                <option value="nicaraguan">Nicaraguan</option>
+                                <option value="nigerien">Nigerien</option>
+                                <option value="north korean">North Korean</option>
+                                <option value="northern irish">Northern Irish</option>
+                                <option value="norwegian">Norwegian</option>
+                                <option value="omani">Omani</option>
+                                <option value="pakistani">Pakistani</option>
+                                <option value="palauan">Palauan</option>
+                                <option value="panamanian">Panamanian</option>
+                                <option value="papua new guinean">Papua New Guinean</option>
+                                <option value="paraguayan">Paraguayan</option>
+                                <option value="peruvian">Peruvian</option>
+                                <option value="polish">Polish</option>
+                                <option value="portuguese">Portuguese</option>
+                                <option value="qatari">Qatari</option>
+                                <option value="romanian">Romanian</option>
+                                <option value="russian">Russian</option>
+                                <option value="rwandan">Rwandan</option>
+                                <option value="saint lucian">Saint Lucian</option>
+                                <option value="salvadoran">Salvadoran</option>
+                                <option value="samoan">Samoan</option>
+                                <option value="san marinese">San Marinese</option>
+                                <option value="sao tomean">Sao Tomean</option>
+                                <option value="saudi">Saudi</option>
+                                <option value="scottish">Scottish</option>
+                                <option value="senegalese">Senegalese</option>
+                                <option value="serbian">Serbian</option>
+                                <option value="seychellois">Seychellois</option>
+                                <option value="sierra leonean">Sierra Leonean</option>
+                                <option value="singaporean">Singaporean</option>
+                                <option value="slovakian">Slovakian</option>
+                                <option value="slovenian">Slovenian</option>
+                                <option value="solomon islander">Solomon Islander</option>
+                                <option value="somali">Somali</option>
+                                <option value="south african">South African</option>
+                                <option value="south korean">South Korean</option>
+                                <option value="spanish">Spanish</option>
+                                <option value="sri lankan">Sri Lankan</option>
+                                <option value="sudanese">Sudanese</option>
+                                <option value="surinamer">Surinamer</option>
+                                <option value="swazi">Swazi</option>
+                                <option value="swedish">Swedish</option>
+                                <option value="swiss">Swiss</option>
+                                <option value="syrian">Syrian</option>
+                                <option value="taiwanese">Taiwanese</option>
+                                <option value="tajik">Tajik</option>
+                                <option value="tanzanian">Tanzanian</option>
+                                <option value="thai">Thai</option>
+                                <option value="togolese">Togolese</option>
+                                <option value="tongan">Tongan</option>
+                                <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                                <option value="tunisian">Tunisian</option>
+                                <option value="turkish">Turkish</option>
+                                <option value="tuvaluan">Tuvaluan</option>
+                                <option value="ugandan">Ugandan</option>
+                                <option value="ukrainian">Ukrainian</option>
+                                <option value="uruguayan">Uruguayan</option>
+                                <option value="uzbekistani">Uzbekistani</option>
+                                <option value="venezuelan">Venezuelan</option>
+                                <option value="vietnamese">Vietnamese</option>
+                                <option value="welsh">Welsh</option>
+                                <option value="yemenite">Yemenite</option>
+                                <option value="zambian">Zambian</option>
+                                <option value="zimbabwean">Zimbabwean</option>
+                            </select>
+                        </div>
+                        <div class="w-full lg:w-[43%]">
+                            <label for="country">Страна проживания</label>
+                            <select name="country" id="country">
+                                <option value="">Выберите</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Aland Islands">Aland Islands</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="American Samoa">American Samoa</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Anguilla">Anguilla</option>
+                                <option value="Antarctica">Antarctica</option>
+                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Aruba">Aruba</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bermuda">Bermuda</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Bouvet Island">Bouvet Island</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Cape Verde">Cape Verde</option>
+                                <option value="Cayman Islands">Cayman Islands</option>
+                                <option value="Central African Republic">Central African Republic</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Christmas Island">Christmas Island</option>
+                                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Congo, Democratic Republic of the Congo">Congo, Democratic Republic of the Congo</option>
+                                <option value="Cook Islands">Cook Islands</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cote D'Ivoire">Cote D'Ivoire</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Curacao">Curacao</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czech Republic">Czech Republic</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic">Dominican Republic</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                <option value="Faroe Islands">Faroe Islands</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="French Guiana">French Guiana</option>
+                                <option value="French Polynesia">French Polynesia</option>
+                                <option value="French Southern Territories">French Southern Territories</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Gibraltar">Gibraltar</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Greenland">Greenland</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guadeloupe">Guadeloupe</option>
+                                <option value="Guam">Guam</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guernsey">Guernsey</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jersey">Jersey</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                                <option value="Korea, Republic of">Korea, Republic of</option>
+                                <option value="Kosovo">Kosovo</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Macao">Macao</option>
+                                <option value="Macedonia, the Former Yugoslav Republic of">Macedonia, the Former Yugoslav Republic of</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands">Marshall Islands</option>
+                                <option value="Martinique">Martinique</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mayotte">Mayotte</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montenegro">Montenegro</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar">Myanmar</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                <option value="New Caledonia">New Caledonia</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Niue">Niue</option>
+                                <option value="Norfolk Island">Norfolk Island</option>
+                                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Pitcairn">Pitcairn</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russian Federation">Russian Federation</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Saint Barthelemy">Saint Barthelemy</option>
+                                <option value="Saint Helena">Saint Helena</option>
+                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                <option value="Saint Lucia">Saint Lucia</option>
+                                <option value="Saint Martin">Saint Martin</option>
+                                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                                <option value="Samoa">Samoa</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serbia">Serbia</option>
+                                <option value="Serbia and Montenegro">Serbia and Montenegro</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Sint Maarten">Sint Maarten</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands">Solomon Islands</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+                                <option value="South Sudan">South Sudan</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                <option value="Swaziland">Swaziland</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Timor-Leste">Timor-Leste</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tokelau">Tokelau</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Viet Nam">Viet Nam</option>
+                                <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                <option value="Virgin Islands, U.s.">Virgin Islands, U.s.</option>
+                                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                <option value="Western Sahara">Western Sahara</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row justify-between">
+                        <div class="w-full lg:w-[43%]">
+                            <label for="email">Адрес электронной почты</label>
+                            <input class="" type="email" name="email" id="email" placeholder="Введите адрес электронной почты">
+                        </div>
+                        <div class="w-full lg:w-[43%]">
+                            <label for="tel">Номер телефона</label>
+                            <input class="" type="tel" name="tel" id="tel" placeholder="Введите номер телефона">
+                        </div>
+                    </div>
+
+                    <label for="message">У меня есть конкретный вопрос</label>
+                    <textarea cols="30" rows="5" placeholder="Не более 5000 слов." id="message"></textarea>
+                    <button class="w-[80%] lg:w-[40%] bg-[#F1F1F1] py-[9px] lg:mt-[50px] rounded-lg text-[#212121] lg:self-end" id="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    
+        <footer class="pt-[50px] lg:pt-[6%] pb-[25px] lg-[3%] bg-[#101010] text-[#F1F1F1]">
+            <div class="container flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                <a href="rus.html" class="mb-[50px] lg:mb-[6%]"><h1 class="medium-text font-black leading-none">PassportHQ</h1></a>
+                <nav class="flex flex-col lg:flex-row gap-[20px] lg:gap-[50px] mb-[50px] lg:mb-[6%]">
+                    <a href="#home">Главная</a>
+                    <a href="#about-us">О нас</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#benefits">Преимущества</a>
+                    <a href="#contact-us">Связаться с нами</a>
+                </nav>
+            </div>
+
+            <div class="container">
+                <hr class="opacity-80">
+                <p class="mt-[25px] lg:mt-[3%] text-center lg:text-left leading-none text-[#F1F1F1] opacity-80">  2023 All rights reserved by ModVis</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

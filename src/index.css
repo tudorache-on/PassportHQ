@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* -------- General Specifications -------- */
+
+html {
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 1536px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 2500px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body.open-menu {
+    overflow: hidden;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+    section {
+        margin-bottom: 6%;
+    }
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
+@media (min-width: 1250px) {
+    .small-text {
+        font-size: 1rem;
+    }
+}
+
+.medium-text {
+    font-size: 1.8rem;
+}
+
+.big-text {
+    font-size: 3.2rem;
+}
+
+.container {
+    max-width: none;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+header .links a, footer nav a {
+    transition: 0.3s;
+    width: max-content;
+    position: relative;
+    color: #F1F1F1;
+}
+
+header .links a::after, footer nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#home .links a:hover::after, footer nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#home .links a:hover, footer nav a:hover {
+    color: white;
+}
+
+.cool-border::after {
+    content:'';
+        position:absolute;
+        width: 100%;
+        height: 100%;    
+        left:0;
+        top: 0;
+        border-left: 4px solid white;
+
+        z-index: 10;
+
+        transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.cool-border.right:after {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .cool-border.right:after {
+        display: block;
+
+        border-left: none;
+        border-right: 4px solid #F1F1F1;
+    }
+}
+
+.cool-border.slide:after {
+    height: 0;
+}
+
+
+/* -------- Loading -------- */
+
+#loading {
+    animation: loading 3.5s;
+}
+
+#loading .passport {
+    position: absolute;
+    border-radius: 8px;
+
+    width: 60px;
+    height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading .passport h3 {
+    position: absolute;
+    top: 15px;
+    color: #FFD460;
+    font-size: 8px;
+}
+
+#loading #wrapper .passport h1 {
+    color: white;
+    font-size: 25px;
+}
+
+#loading #wrapper :first-child:not(h3) {
+    animation: first 1s;
+}
+
+#loading :nth-child(2):not(h1) {
+    transform: rotate(45deg);
+    right: -30px;
+    top: 15px;
+
+    animation: firstRight 1.5s;
+}
+
+#loading :nth-child(3):not(h1) {
+    transform: rotate(-45deg);
+    left: -30px;
+    top: 15px;
+
+    animation: firstLeft 1.5s;
+}
+
+#loading :nth-child(4):not(h1) {
+    transform: rotate(90deg);
+    right: -45px;
+    top: 40px;
+
+    animation: secondRight 1.5s;
+}
+
+#loading :nth-child(5):not(h1) {
+    transform: rotate(-90deg);
+    left: -45px;
+    top: 40px;
+
+    animation: secondLeft 1.5s;
+}
+
+#loading #title {
+    animation: title 2.5s;
+}
+
+@keyframes loading {
+    0% {opacity: 1;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes title {
+    0%{bottom: 2rem; opacity: 0;}
+    60%{bottom: 2rem; opacity: 0;}
+    100%{bottom: 0; opacity: 1;}
+}
+
+@keyframes first {
+    from {top: 30px; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+
+@keyframes firstLeft {
+    0% {transform: rotate(0); left: -10px; opacity: 0;}
+    30% {transform: rotate(0); left: -10px; opacity: 0;}
+    100% {transform: rotate(-45deg); left: -30px; opacity: 1;}
+}
+
+@keyframes secondLeft {
+    0% {transform: rotate(-45deg); left: -30px; top: 30px; opacity: 0;}
+    50% {transform: rotate(-45deg); left: -30px; top: 30px; opacity: 0;}
+    100% {transform: rotate(-90deg); left: -45px; opacity: 1;}
+}
+
+@keyframes firstRight {
+    0% {transform: rotate(0); right: -10px; opacity: 0;}
+    30% {transform: rotate(0); right: -10px; opacity: 0;}
+    100% {transform: rotate(45deg); right: -30px; opacity: 1;}
+}
+
+@keyframes secondRight {
+    0% {transform: rotate(45deg); right: -30px; top: 30px; opacity: 0;}
+    50% {transform: rotate(45deg); right: -30px; top: 30px; opacity: 0;}
+    100% {transform: rotate(90deg); right: -45px; opacity: 1;}
+}
+
+
+
+/* -------- Header -------- */
+
+header h1 {
+    z-index: 2;
+}
+
+@keyframes header {
+    from {top: -100%} to {top: 0}
+}
+
+header.active {
+    z-index: 20;
+    position: fixed;
+    background-color: #2D4059;
+    height: 9%;
+
+    animation: header 0.5s;
+}
+
+header button.active {
+    background-color: #F1F1F1;
+    color: #2D4059;
+}
+
+header .logo {
+    transition: 0.7s all;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(to bottom, #000000bc, transparent);
+}
+
+header.active::before {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    header::before {
+        display: none;
+    }
+}
+
+.menu {
+    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.menu a {
+    margin-left: -100px;
+    opacity: 0;
+}
+
+.menu.open {
+    left: 0;
+}
+
+.menu-btn div {
+    width: 40px;
+    background: #fff;
+    height: 4px;
+    margin: 7px 0;
+
+    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.menu-btn .line-1.cross {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.menu-btn .line-2.cross {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+.languages {
+    transition: 0.7s;
+}
+
+.languages.open {
+    right: 25px;
+}
+
+/* -------- Home -------- */
+
+#home {
+    background-image: url(../resources/images/HOME/Home_BG.webp);
+    background-size: cover;
+    background-position: 50%;
+
+    color: white;
+}
+
+@media (min-width: 1024px) {
+    #home {
+        background-size: 120%;
+    }
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, #000000, transparent);
+}
+
+@media (min-width: 1024px) {
+    #home::before {
+        display: none;
+    }
+
+    #home:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(to right, #000000, transparent);
+    }
+}
+
+#home h1 {
+    font-weight: 900;
+}
+
+
+/* -------- About Us -------- */
+
+#about-us .carousell img {
+    transition: all 0.8s;
+}
+
+#about-us .small-image {
+    width: 55%;
+    max-height: 350px;
+    margin-right: -15%;
+}
+
+#about-us .big-image {
+    width: 65%;
+    max-height: 450px;
+}
+
+@media (min-width: 1800px) {
+    #about-us .small-image {
+        max-height: 600px;
+    }
+    
+    #about-us .big-image {
+        max-height: 700px;
+    }
+}
+
+
+/* -------- Services -------- */
+
+#services {
+    background-image: url(../resources/images/SERVICES/service.webp);
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+/* -------- Benefits -------- */
+
+#benefits .grid > div {
+    perspective: 1000px;
+    min-height: 350px;
+    max-height: 400px;
+}
+
+@media (min-width: 1800px) {
+    #benefits .grid > div {
+        min-height: 375px;
+    }
+}
+
+@media (min-width: 2000px) {
+    #benefits .grid > div {
+        min-height: 350px;
+    }
+}
+
+#benefits .grid > div > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+#benefits .grid > div > div > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+
+    border-radius: 20px;
+}
+
+#benefits .grid img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#benefits .grid > div > div .back {
+    transform: rotateY(180deg);
+}
+
+
+/* -------- Split -------- */
+
+#split-image{
+    transition: all 0.8s;
+
+}
+
+
+/* -------- Video -------- */
+
+#video {
+    background-image: url(../resources/images/VIDEO/BG.webp);
+    background-size: cover;
+    background-position: 70%;
+}
+
+
+/* -------- Contact Us -------- */
+
+@media (min-width: 1024px) {
+    #contact-us {
+        background: linear-gradient(
+        to right,
+        #212121 0%,
+        #212121 50%,
+        #2D4059 50%,
+        #2D4059 100%
+  );
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    color: #F1F1F1 !important;
+    -webkit-text-fill-color: #F1F1F1 !important;
+    -webkit-background-clip: text !important;
+    background-clip:  text !important;
+}
+
+#contact-us p {
+    margin-bottom: 25px;
+}
+
+#contact-us form input:not([type='submit']), #contact-us form textarea, #contact-us form select {
+    width: 100%;
+    margin-bottom: 40px;
+
+    padding-top: 5px;
+    padding-left: 0;
+    padding-bottom: 6px;
+
+    background-color: transparent;
+    border-bottom: #D2D2D2 1px solid;
+}
+
+#contact-us form select {
+    color: #D2D2D2;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("../resources/images/CONTACT-US/Vector.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 15px;
+    background-size: 15px;
+}
+
+#contact-us form option {
+    background-color: white;
+    color: #2D4059;
+}
+
+#contact-us form option:checked {
+    background-color: #FFD460;
+    color: white;
+}
+
+#contact-us form textarea {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #D2D2D2;
+}
+
+#contact-us form label {
+    font-weight: bold;
+}
+
+#contact-us form input:focus, #contact-us form select:focus {
+    outline: none !important;
+    border-bottom: white 1px solid;
+}
+
+#contact-us form input::placeholder, #contact-us form textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #D2D2D2;
+    opacity: 1; /* Firefox */
+}
+  
+#contact-us form input:-ms-input-placeholder, #contact-us form textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #D2D2D2;
+}
+  
+#contact-us form input::-ms-input-placeholder, #contact-us form textarea::-ms-input-placeholder { /* Microsoft Edge */
+    color: #D2D2D2;
+}
+
+#contact-us img {
+    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+
+/* -------- Footer -------- */
+
+footer nav a {
+    font-size: 1.5rem
+}
+
+@media (min-width: 1024px) {
+    footer nav a {
+        font-size: 1rem;
+    }
+}
+
+/* -------- Animations -------- */
+
+.line {
+    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.line.slide {
+    width: 0;
+}
+
+@media (min-width: 1024px) {
+    .line.slide.vertical {
+        width: 4px;
+        height: 0;
+    }
+}
